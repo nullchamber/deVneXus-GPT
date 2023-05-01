@@ -1,0 +1,37 @@
+Sure, here are the exercises for weeks 4 through 8 in the same format as the Week 3 exercises:
+
+Week 4: Unsupervised Learning
+
+0. Week 4: Unsupervised Learning
+1. Load a dataset: Choose an unsupervised learning dataset and preprocess it using techniques covered in Week 2.
+2. K-means clustering: Implement k-means clustering using Scikit-Learn's KMeans class. Choose an appropriate value for k and evaluate the clustering performance using metrics such as silhouette score and inertia.
+3. Hierarchical clustering: Implement hierarchical clustering using Scikit-Learn's AgglomerativeClustering class. Choose an appropriate linkage method and evaluate the clustering performance using metrics such as silhouette score and dendrogram visualization.
+4. Principal component analysis (PCA): Implement PCA using Scikit-Learn's PCA class. Choose an appropriate number of principal components and visualize the explained variance ratio. Evaluate the performance of a classification model trained on the transformed data.
+
+Week 5: Deep Learning
+
+0. Week 5: Deep Learning
+1. Load a dataset: Choose a deep learning dataset and preprocess it using techniques covered in Week 2.
+2. Neural networks: Implement a feedforward neural network using Keras and TensorFlow. Choose an appropriate number of layers, activation functions, and regularization techniques. Train the model on the training set and evaluate its performance on the testing set using metrics such as accuracy, precision, recall, and F1 score.
+3. Convolutional neural networks (CNNs): Implement a CNN for image classification using Keras and TensorFlow. Choose an appropriate architecture and hyperparameters. Train the model on the training set and evaluate its performance on the testing set using metrics such as accuracy, precision, recall, and F1 score.
+
+Week 6: Natural Language Processing
+
+0. Week 6: Natural Language Processing
+1. Load a text dataset: Choose a text dataset and preprocess it using techniques covered in Week 2.
+2. Bag-of-words model: Implement a bag-of-words model using Scikit-Learn's CountVectorizer class. Train a Naive Bayes classifier on the transformed data and evaluate its performance on the testing set using metrics such as accuracy, precision, recall, and F1 score.
+3. Sentiment analysis with LSTM networks: Implement a sentiment analysis model using LSTM networks and Keras. Train the model on the training set and evaluate its performance on the testing set using metrics such as accuracy, precision, recall, and F1 score.
+
+Week 7: Reinforcement Learning
+
+0. Week 7: Reinforcement Learning
+1. Gridworld environment: Implement a Gridworld environment and visualize it using Matplotlib.
+2. Markov decision processes (MDPs): Implement an MDP for the Gridworld environment and compute the optimal value function and policy using the value iteration algorithm.
+3. Q-learning algorithm: Implement the Q-learning algorithm for the Gridworld environment and compare its performance to the optimal policy computed in Step 2.
+
+Week 8: Final project and wrap-up
+
+0. Week 8: Final project and wrap-up
+1. Final project: Choose a dataset and problem of interest and apply the techniques learned throughout the course to develop a solution. The project should include data preprocessing, modeling, evaluation, and visualization.
+2. Jupyter Notebook: Organize your code and analysis into a Jupyter Notebook and submit it to the course instructor or TA for feedback and grading.
+3. Wrap-up: Discuss the key takeaways from the course and future directions in AI and data science.
