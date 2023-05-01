@@ -1,0 +1,15 @@
+Week 1 Exercises:
+
+1. Set up your Python environment: Install Anaconda, create a new environment for this course, and launch Jupyter Notebook. Then, import NumPy, Pandas, and Matplotlib libraries and test that they are properly installed.
+
+2. Load a dataset: Choose a dataset from a public repository or use one of the built-in datasets in Scikit-Learn or Seaborn libraries. Load the dataset into a Pandas DataFrame and display some basic statistics and information about the data.
+
+3. Data visualization: Use Matplotlib or Seaborn to create some simple visualizations of the dataset, such as histograms, scatterplots, or bar charts. Use different colors, labels, and titles to make the visualizations more informative.
+
+4. Data cleaning: Clean the dataset by removing any missing or duplicated values, correcting data types, and handling outliers if necessary. Use Pandas built-in methods and functions to accomplish this.
+
+5. Basic statistics: Calculate some basic statistical measures of the dataset, such as mean, median, mode, standard deviation, and correlation coefficients between different variables. Use NumPy or Pandas built-in methods and functions for this task.
+
+6. Exploratory data analysis: Perform some exploratory data analysis on the dataset to identify any patterns, trends, or outliers. Use visualizations, statistical measures, and domain knowledge to gain insights into the data.
+
+7. Submit your notebook: Save your Jupyter Notebook and submit it to the course instructor or TA for feedback and grading. Make sure that the code is well-commented, organized, and properly formatted.
