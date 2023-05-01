@@ -1,0 +1,41 @@
+Sure, here are the exercises for Weeks 2 through 8 of the Artificial Intelligence and Data Science with Python course:
+
+Week 2: Data Preprocessing and Cleaning
+
+1. Load a dataset: Choose a dataset with missing values and/or outliers. Load the dataset into a Pandas DataFrame and display some basic statistics and information about the data.
+
+2. Missing value imputation: Use Pandas or Scikit-Learn methods to impute missing values in the dataset. Compare different imputation techniques and their effects on the dataset.
+
+3. Outlier detection and removal: Use Pandas or Scikit-Learn methods to detect and remove outliers from the dataset. Compare different outlier detection techniques and their effects on the dataset.
+
+4. Feature scaling and normalization: Apply different feature scaling and normalization techniques to the dataset, such as Min-Max scaling, Z-score normalization, and log transformation. Compare the effects of these techniques on the dataset.
+
+5. Data preprocessing pipeline: Build a data preprocessing pipeline using Scikit-Learn's Pipeline and ColumnTransformer classes. Use this pipeline to transform the raw dataset into a cleaned and preprocessed dataset suitable for machine learning.
+
+6. Exploratory data analysis: Perform some exploratory data analysis on the preprocessed dataset to identify any patterns, trends, or outliers. Use visualizations, statistical measures, and domain knowledge to gain insights into the data.
+
+7. Submit your notebook: Save your Jupyter Notebook and submit it to the course instructor or TA for feedback and grading. Make sure that the code is well-commented, organized, and properly formatted.
+
+Week 3: Supervised Learning
+
+1. Load a dataset: Choose a supervised learning dataset and split it into training and testing sets using Scikit-Learn's train_test_split function.
+
+2. Linear regression: Implement linear regression using Scikit-Learn's LinearRegression class. Train the model on the training set and evaluate its performance on the testing set using metrics such as mean squared error and R-squared.
+
+3. Logistic regression: Implement logistic regression using Scikit-Learn's LogisticRegression class. Train the model on the training set and evaluate its performance on the testing set using metrics such as accuracy, precision, recall, and F1 score.
+
+4. K-nearest neighbors: Implement k-nearest neighbors classification using Scikit-Learn's KNeighborsClassifier class. Choose an appropriate value for k and evaluate the model's performance on the testing set using metrics such as accuracy, precision, recall, and F1 score.
+
+5. Decision trees: Implement decision tree classification using Scikit-Learn's DecisionTreeClassifier class. Choose an appropriate value for the maximum depth and evaluate the model's performance on the testing set using metrics such as accuracy, precision, recall, and F1 score.
+
+6. Random forests: Implement random forest classification using Scikit-Learn's RandomForestClassifier class. Choose an appropriate value for the number of trees and evaluate the model's performance on the testing set using metrics such as accuracy, precision, recall, and F1 score.
+
+7. Submit your notebook: Save your Jupyter Notebook and submit it to the course instructor or TA for feedback and grading. Make sure that the code is well-commented, organized, and properly formatted.
+
+Week 4: Unsupervised Learning
+
+1. Load a dataset: Choose an unsupervised learning dataset and split it into training and testing sets using Scikit-Learn's train_test_split function.
+
+2. K-means clustering: Implement k-means clustering using Scikit-Learn's KMeans class. Choose an appropriate value for k and evaluate the clustering performance using metrics such as silhouette score and inertia.
+
+3. Hierarchical clustering: Implement hierarchical clustering using Scikit-Learn's AgglomerativeClustering class. Choose an appropriate linkage method and distance metric, and evaluate the
