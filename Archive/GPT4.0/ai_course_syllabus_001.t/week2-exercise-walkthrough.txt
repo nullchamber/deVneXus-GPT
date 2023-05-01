@@ -1,1 +1,103 @@
 
+Here's a "code-along" walkthrough for the Week 2 exercises:
+
+1. Load a dataset:
+
+```python
+import pandas as pd
+
+# Replace 'file_path' with the path to your dataset
+dataset = pd.read_csv('file_path')
+print(dataset.head())
+print(dataset.describe())
+```
+
+2. Missing value imputation:
+
+```python
+from sklearn.impute import SimpleImputer
+
+# Impute missing values with the mean (other options: 'median', 'most_frequent', or a constant value)
+imputer = SimpleImputer(strategy='mean')
+dataset_filled = imputer.fit_transform(dataset)
+dataset_filled = pd.DataFrame(dataset_filled, columns=dataset.columns)
+```
+
+3. Outlier detection and removal:
+
+```python
+from scipy import stats
+
+# Remove outliers using Z-score (data points with an absolute Z-score > 3 are considered outliers)
+z_scores = stats.zscore(dataset_filled)
+outlier_indices = (abs(z_scores) > 3).any(axis=1)
+dataset_no_outliers = dataset_filled[~outlier_indices]
+```
+
+4. Feature scaling and normalization:
+
+```python
+from sklearn.preprocessing import MinMaxScaler, StandardScaler, PowerTransformer
+
+# Min-Max scaling
+min_max_scaler = MinMaxScaler()
+dataset_min_max = min_max_scaler.fit_transform(dataset_no_outliers)
+
+# Z-score normalization
+standard_scaler = StandardScaler()
+dataset_z_score = standard_scaler.fit_transform(dataset_no_outliers)
+
+# Log transformation
+power_transformer = PowerTransformer(method='yeo-johnson')
+dataset_log_transformed = power_transformer.fit_transform(dataset_no_outliers)
+```
+
+5. Data preprocessing pipeline:
+
+```python
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+
+# Define preprocessing steps for specific columns or all columns
+preprocessor = ColumnTransformer(transformers=[
+    ('num', SimpleImputer(), ['numerical_feature_1', 'numerical_feature_2']),
+    ('cat', SimpleImputer(strategy='most_frequent'), ['categorical_feature'])
+])
+
+# Create the pipeline
+pipeline = Pipeline(steps=[
+    ('preprocessor', preprocessor),
+    ('scaler', MinMaxScaler())
+])
+
+# Fit and transform the dataset
+dataset_preprocessed = pipeline.fit_transform(dataset)
+```
+
+6. Exploratory data analysis:
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Visualize the distribution of a variable
+sns.histplot(dataset_preprocessed['numerical_feature_1'])
+plt.show()
+
+# Visualize the relationship between two variables
+sns.scatterplot(data=dataset_preprocessed, x='numerical_feature_1', y='numerical_feature_2', hue='categorical_feature')
+plt.show()
+
+# Compute the correlation matrix
+correlation_matrix = dataset_preprocessed.corr()
+sns.heatmap(correlation_matrix, annot=True)
+plt.show()
+```
+
+7. Submit your notebook:
+
+- Save your Jupyter Notebook by clicking "File" > "Save and Checkpoint"
+- Export your notebook as a PDF or HTML file by clicking "File" > "Download as" > "PDF via LaTeX (.pdf)" or "HTML (.html)"
+- Submit the exported file to the course instructor or TA for feedback and grading
+
+Remember to add comments and explanations throughout your notebook to enhance readability and understanding.
